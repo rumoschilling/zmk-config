@@ -18,6 +18,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        capslock_layer1: capslock_layer1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CAPSLOCK_LAYER1";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&kp CAPSLOCK>;
+        };
     };
 
     combos {
@@ -40,10 +47,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T          &kp Y      &kp U              &kp I         &kp O    &kp P          &kp BACKSLASH
-&mt LCTRL ESCAPE  &kp A  &kp S  &kp D     &kp F  &kp G          &kp H      &kp J              &kp K         &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LSHFT         &kp Z  &kp X  &kp C     &kp V  &kp B          &kp N      &kp M              &kp COMMA     &kp DOT  &kp FSLH       &mt LEFT_ALT GRAVE
-                                &kp LGUI  &mo 1  &lt 2 ENTER    &kp SPACE  &backspace_delete  &kp CAPSLOCK
+&kp TAB           &kp Q  &kp W  &kp E     &kp R             &kp T          &kp Y          &kp U      &kp I       &kp O    &kp P          &kp BACKSLASH
+&mt LCTRL ESCAPE  &kp A  &kp S  &kp D     &kp F             &kp G          &kp H          &kp J      &kp K       &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LSHFT         &kp Z  &kp X  &kp C     &kp V             &kp B          &kp N          &kp M      &kp COMMA   &kp DOT  &kp FSLH       &mt LEFT_ALT GRAVE
+                                &kp LGUI  &capslock_layer1  &lt 2 ENTER    &kp BACKSPACE  &kp SPACE  &kp DELETE
             >;
         };
 
