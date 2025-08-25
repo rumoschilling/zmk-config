@@ -65,7 +65,7 @@
 &kp TAB           &kp Q  &kp W  &kp F      &kp P           &kp B          &kp J          &kp L      &kp U                   &kp Y    &kp SEMICOLON       &kp BACKSLASH
 &kp LEFT_SHIFT    &kp A  &kp R  &kp S      &kp T           &kp G          &kp COMMA      &kp N      &kp E                   &kp I    &kp O               &kp SINGLE_QUOTE
 &mt LCTRL ESCAPE  &kp Z  &kp X  &kp C      &kp D           &kp V          &kp K          &kp H      &kp M                   &kp DOT  &mt LEFT_ALT TILDE  &mt LEFT_ALT GRAVE
-                                &lt 2 TAB  &kp LEFT_SHIFT  &lt 1 ENTER    &kp BACKSPACE  &kp SPACE  &mt LEFT_COMMAND ENTER
+                                &lt 1 TAB  &kp LEFT_SHIFT  &lt 2 ENTER    &kp BACKSPACE  &kp SPACE  &mt LEFT_COMMAND ENTER
             >;
         };
 
@@ -80,9 +80,9 @@
 
         layer_2 {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none     &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END       &none     &none
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none     &none     &kp LEFT       &kp RIGHT    &kp UP_ARROW  &kp DOWN  &none
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none     &none     &none          &none        &none         &none     &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none     &kp HOME  &kp PAGE_DOWN  &kp UP_ARROW  &kp END    &none  &none
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none     &none     &kp LEFT       &kp DOWN      &kp RIGHT  &kp A  &none
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none     &none     &none          &none         &none      &none  &trans
                          &trans   &trans   &trans    &trans    &trans         &trans
             >;
         };
