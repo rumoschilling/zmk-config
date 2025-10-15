@@ -46,7 +46,7 @@
         };
 
         exclam {
-            bindings = <&none>;
+            bindings = <&kp EXCLAMATION>;
             key-positions = <19 20>;
         };
     };
@@ -71,10 +71,10 @@
 
         layer_1 {
             bindings = <
-&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp N5              &kp NUMBER_6       &kp N7                 &kp N8         &kp N9             &kp N0            &none
-&trans  &kp EXCLAMATION  &kp PLUS      &kp MINUS     &kp LEFT_PARENTHESIS  &kp PERCENT         &kp CARET          &kp RIGHT_PARENTHESIS  &kp ASTERISK   &kp KP_EQUAL       &kp SINGLE_QUOTE  &kp DOLLAR
-&trans  &kp LEFT_GUI     &kp AT        &kp POUND     &kp LEFT_BRACE        &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &kp FSLH       &kp DOUBLE_QUOTES  &kp UNDER         &trans
-                                       &trans        &trans                &trans              &trans             &trans                 &kp RIGHT_ALT
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp N5              &kp NUMBER_6       &kp N7                 &kp N8         &kp N9            &kp N0             &none
+&trans  &kp DOLLAR    &kp PLUS      &kp MINUS     &kp LEFT_PARENTHESIS  &kp PERCENT         &kp CARET          &kp RIGHT_PARENTHESIS  &kp ASTERISK   &kp KP_EQUAL      &kp DOUBLE_QUOTES  &kp DOLLAR
+&trans  &kp LEFT_GUI  &kp AT        &kp POUND     &kp LEFT_BRACE        &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &kp FSLH       &kp SINGLE_QUOTE  &kp UNDER          &trans
+                                    &trans        &trans                &trans              &trans             &trans                 &kp RIGHT_ALT
             >;
         };
 
@@ -93,6 +93,15 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_DOWN  &none  &none  &none  &none  &none
 &none       &none         &none         &none         &none         &none           &kp K_MUTE         &none  &none  &none  &none  &none
                                         &none         &none         &none           &none              &none  &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans        &trans    &trans        &trans        &trans        &trans  &trans  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp N8  &kp N0  &trans
+&trans  &trans        &trans        &trans        &kp NUMBER_5  &trans    &trans        &kp NUMBER_6  &trans        &trans  &trans  &trans
+                                    &trans        &trans        &trans    &trans        &trans        &trans
             >;
         };
     };
