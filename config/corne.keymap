@@ -75,7 +75,7 @@
 &kp TAB              &kp Q  &kp W  &kp F      &kp P             &kp B          &kp J          &kp L              &kp U                   &kp Y    &kp SEMICOLON           &kp BACKSLASH
 &kp LEFT_SHIFT       &kp A  &kp R  &kp S      &mt LEFT_SHIFT T  &kp G          &kp M          &mt RIGHT_SHIFT N  &kp E                   &kp I    &kp O                   &mt RIGHT_SHIFT APOS
 &mt LEFT_GUI ESCAPE  &kp Z  &kp X  &kp C      &kp D             &kp V          &kp K          &kp H              &kp COMMA               &kp DOT  &mt LEFT_ALT AMPERSAND  &mt TILDE GRAVE
-                                   &lt 1 TAB  &lt 1 A           &lt 2 ENTER    &kp BACKSPACE  &kp SPACE          &mt LEFT_COMMAND ENTER
+                                   &lt 1 TAB  &sl 1             &lt 2 ENTER    &kp BACKSPACE  &kp SPACE          &mt LEFT_COMMAND ENTER
             >;
         };
 
