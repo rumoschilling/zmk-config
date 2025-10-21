@@ -13,7 +13,7 @@
 /{
     behaviors {
      
-            /* --- custom mod-taps with tuned timings --- */
+            /* --- custom mod-taps with ttuned timings --- */
     mt_left_shift: mt_left_shift {
         compatible = "zmk,behavior-hold-tap";
         label = "MT_LEFT_SHIFT";
