@@ -12,21 +12,10 @@
 / 
 {
     behaviors {
-      mt_left_shift: mod_tap_left_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_LEFT_SHIFT";
-            bindings = <&kp LEFT_SHIFT>, <&kp T>;
-            tapping-term-ms = <120>;
-            flavor = "tap-preferred";
-        };
-
-        mt_right_shift: mod_tap_right_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_RIGHT_SHIFT";
-            bindings = <&kp RIGHT_SHIFT>, <&kp N>;
-            tapping-term-ms = <120>;
-            flavor = "tap-preferred";
-        };
+     
+        &mt {
+            tapping-term-ms = <120>; // Adjust this value as needed
+       };
         backspace_delete: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
