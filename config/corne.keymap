@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/keys.h>
 
  
-/ 
-{
+
+/{
     behaviors {
      
             /* --- custom mod-taps with tuned timings --- */
