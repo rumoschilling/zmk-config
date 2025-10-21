@@ -10,6 +10,17 @@
 
 / {
     behaviors {
+    /* --- override global hold-tap / mod-tap defaults --- */
+    &mt {
+        tapping-term-ms = <100>;    /* try 120, adjust 100–140 for very fast typing */
+        flavor = "tap-preferred";   /* favors taps on ambiguous events (good for rolls) */
+        quick-tap-ms = <0>;         /* optional; tweak if you want special quick-tap behaviour */
+    };
+
+    &lt {
+        tapping-term-ms = <500>;
+        quick-tap-ms = <0>;
+    };
         backspace_delete: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
