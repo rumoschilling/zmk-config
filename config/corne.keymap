@@ -10,6 +10,29 @@
 
 / {
     behaviors {
+        /* --- index-finger mod-taps (parameterized: expect two params at use site) --- */
+        mt_index_left: mt_index_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_INDEX_LEFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <110>;
+            require-prior-idle-ms = <40>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <50>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        mt_index_right: mt_index_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_INDEX_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <110>;
+            require-prior-idle-ms = <40>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <50>;
+            bindings = <&kp>, <&kp>;
+        };
+
         backspace_delete: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
@@ -73,9 +96,9 @@
 
             bindings = <
 &kp TAB              &kp Q  &kp W  &kp F      &kp P             &kp B          &kp J          &kp L              &kp U                   &kp Y    &kp SEMICOLON           &kp BACKSLASH
-&kp LEFT_SHIFT       &kp A  &kp R  &kp S      &mt LEFT_SHIFT T  &kp G          &kp M          &mt RIGHT_SHIFT N  &kp E                   &kp I    &kp O                   &mt RIGHT_SHIFT APOS
+&kp LEFT_SHIFT       &kp A  &kp R  &kp S      &mt_index_left LEFT_SHIFT T  &kp G          &kp M          &mt_index_right RIGHT_SHIFT N  &kp E                   &kp I    &kp O                   &mt_index_right RIGHT_SHIFT APOS
 &mt LEFT_GUI ESCAPE  &kp Z  &kp X  &kp C      &kp D             &kp V          &kp K          &kp H              &kp COMMA               &kp DOT  &mt LEFT_ALT AMPERSAND  &mt TILDE GRAVE
-                                   &lt 1 TAB  &lt 1 A           &lt 2 ENTER    &kp BACKSPACE  &kp SPACE          &mt LEFT_COMMAND ENTER
+                                   &lt 1 TAB  &sl 1             &lt 2 ENTER    &kp BACKSPACE  &kp SPACE          &mt LEFT_COMMAND ENTER
             >;
         };
 
