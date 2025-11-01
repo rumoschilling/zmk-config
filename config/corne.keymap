@@ -83,6 +83,11 @@
             bindings = <&kp DOLLAR>;
             key-positions = <15 20>;
         };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <25 34>;
+        };
     };
 
     keymap {
@@ -106,7 +111,7 @@
         layer_1 {
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp N5              &kp NUMBER_6       &kp N7                 &kp N8         &kp N9        &kp N0            &none
-&trans  &kp UNDER     &kp PLUS      &kp MINUS     &kp LEFT_PARENTHESIS  &kp PERCENT         &kp CARET          &kp RIGHT_PARENTHESIS  &kp ASTERISK   &kp KP_EQUAL  &kp SINGLE_QUOTE  &kp PIPE
+&trans  &kp UNDER     &kp PLUS      &kp MINUS     &kp LEFT_PARENTHESIS  &kp PERCENT         &kp CARET          &kp RIGHT_PARENTHESIS  &kp ASTERISK   &kp KP_EQUAL  &kp SINGLE_QUOTE  &trans
 &trans  &kp LEFT_GUI  &kp AT        &kp POUND     &kp LEFT_BRACE        &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &kp FSLH       &kp LT        &kp GT            &trans
                                     &trans        &trans                &trans              &trans             &trans                 &kp RIGHT_ALT
             >;
