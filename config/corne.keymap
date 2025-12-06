@@ -113,6 +113,27 @@
             bindings = <&mkp RCLK &mkp RCLK &mkp RCLK>;
             label = "TELEPORT";
         };
+
+        meteor: meteor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp RCLK &mkp LCLK &mkp LCLK>;
+            label = "METEOR";
+        };
+
+        ice_snake: ice_snake {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp RCLK &mkp RCLK &mkp LCLK>;
+            label = "ICE_SNAKE";
+        };
+
+        kackspell: kackspell {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp RCLK &mkp LCLK &mkp RCLK>;
+            label = "KACKSPELL";
+        };
     };
 
     keymap {
@@ -169,12 +190,12 @@
             >;
         };
 
-        minecraft {
+        wynncraft {
             bindings = <
-&trans  &trans          &trans  &kp W      &trans  &trans    &trans          &trans          &trans        &trans           &trans          &trans
-&trans  &kp LEFT_SHIFT  &kp A   &teleport  &kp D   &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mmv MOVE_LEFT  &trans
-&trans  &trans          &trans  &kp S      &trans  &trans    &trans          &trans          &trans        &trans           &trans          &sl 0
-                                &trans     &none   &trans    &trans          &trans          &trans
+&trans  &trans      &trans      &kp W      &trans   &trans    &trans          &trans          &trans        &trans           &trans          &trans
+&trans  &kackspell  &ice_snake  &teleport  &meteor  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mmv MOVE_LEFT  &trans
+&trans  &trans      &trans      &kp S      &trans   &trans    &trans          &trans          &trans        &trans           &trans          &sl 0
+                                &trans     &none    &trans    &trans          &trans          &trans
             >;
         };
     };
