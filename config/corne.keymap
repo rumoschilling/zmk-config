@@ -167,9 +167,9 @@
 
         minecraft {
             bindings = <
-&trans  &trans          &trans  &kp S      &trans  &trans    &trans           &trans          &trans        &trans          &trans           &trans
+&trans  &trans          &trans  &teleport  &trans  &trans    &trans           &trans          &trans        &trans          &trans           &trans
 &trans  &kp LEFT_SHIFT  &kp A   &kp W      &kp D   &trans    &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &trans
-&trans  &trans          &trans  &teleport  &trans  &trans    &trans           &trans          &trans        &trans          &trans           &sl 0
+&trans  &trans          &trans  &kp S      &trans  &trans    &trans           &trans          &trans        &trans          &trans           &sl 0
                                 &trans     &none   &trans    &trans           &trans          &trans
             >;
         };
