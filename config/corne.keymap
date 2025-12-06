@@ -119,6 +119,8 @@
             #binding-cells = <0>;
             bindings = <&mkp RCLK &mkp LCLK &mkp LCLK>;
             label = "METEOR";
+            tap-ms = <0>;
+            wait-ms = <100>;
         };
 
         ice_snake: ice_snake {
@@ -126,6 +128,7 @@
             #binding-cells = <0>;
             bindings = <&mkp RCLK &mkp RCLK &mkp LCLK>;
             label = "ICE_SNAKE";
+            wait-ms = <100>;
         };
 
         kackspell: kackspell {
@@ -133,6 +136,7 @@
             #binding-cells = <0>;
             bindings = <&mkp RCLK &mkp LCLK &mkp RCLK>;
             label = "KACKSPELL";
+            wait-ms = <100>;
         };
     };
 
