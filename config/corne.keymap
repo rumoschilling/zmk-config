@@ -199,7 +199,7 @@
 &trans  &trans      &trans      &kp W      &trans   &trans    &trans          &trans          &trans        &trans           &trans          &trans
 &trans  &kackspell  &ice_snake  &teleport  &meteor  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mmv MOVE_LEFT  &trans
 &trans  &trans      &trans      &kp S      &trans   &trans    &trans          &trans          &trans        &trans           &trans          &sl 0
-                                &trans     &none    &trans    &trans          &trans          &trans
+                                &trans     &sl 4    &trans    &trans          &trans          &trans
             >;
         };
     };
